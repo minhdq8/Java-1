@@ -36,4 +36,5 @@ public class bai2 {
         String hoTen = sc.nextLine();
         
     }
+    
 }
