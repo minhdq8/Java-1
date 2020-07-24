@@ -20,12 +20,28 @@ public class SinhVien {
     public SinhVien(double diem) {
         this.diem = diem;
     }
+
+    public int getTuoi() {
+        return tuoi;
+    }
+
+    public void setTuoi(int tuoi) {
+        this.tuoi = tuoi;
+    }
+// get: lấy gtri thuộc tính
+    public double getDiem() {
+        return diem;
+    }
+// set: gán gtri cho thuộc tính
+    public void setDiem(double diem) {
+        this.diem = diem;
+    }
     
     
     // thuộc tính(trường)
     String hoTen;
-    int tuoi;
-    double diem;
+    private int tuoi;
+    private double diem;
     // phương thức
     public void nhapTT(){
         System.out.print("Nhập tên: ");
@@ -39,5 +55,6 @@ public class SinhVien {
         System.out.println("Điểm là : "+ diem);
         //hluc
     }
+    
     
 }

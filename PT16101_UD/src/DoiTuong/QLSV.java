@@ -8,23 +8,12 @@ package DoiTuong;
 public class QLSV {
     public static void main(String[] args) {
         SinhVien sv1 = new SinhVien();
-        
-        SinhVien sv2 = new SinhVien("minh", 30, 3);
-        
-    }
-    public static void main01(String[] args) {
-        // khai báo và khởi tại 1 đối tượng sinh vien
-        SinhVien sv1 = new SinhVien();
-        sv1.nhapTT();
-        sv1.tuoi = 10;
-        sv1.diem = 8;
-        SinhVien anNGu = new SinhVien();
-        anNGu.nhapTT();
-        anNGu.tuoi = 20;
-        System.out.println("Thông tin toàn bộ SV");
-        sv1.xuatTT();
-        System.out.println("Tuổi là : " + anNGu.tuoi);
-        
+        sv1.setTuoi(10);
+        sv1.hoTen = " ";
+        System.out.println(sv1.getDiem());
+        SinhVien sv2 = new SinhVien("minh", 30, 3.7);
+        System.out.println(sv2.getTuoi());
         
     }
+   
 }
