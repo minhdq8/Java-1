@@ -86,7 +86,23 @@ Tạo thêm file main, tạo đối tượng sv, nhập và xuất thông tin đ
 
 *** tham số truyền vào và kiểu dữ liệu trả về
 
+15. Tạo lớp mô tả Laptop bao gồm tên hãng, version, giá tiền và các phương thức nhập, xuất và xếp loại theo version( trước 2018 -> cũ, sau 2018 -> mới).
 
+Tạo 2-3 đối tượng khác nhau. In ra info của các đối tượng đó
+
+
+16. Viết chương trình tính diện tích, chu vi hình chữ nhật.
+	-> Tạo lớp HinhChuNhat bao gồm:
+	 - thuộc tính: chiều dài, chiều rộng
+	 - pthuc: setter và getter
+	 - pthuc tính diện tích, chu vi
+	 - pthuc toString gồm các thông tin: dài, rộng, chu vi, diện tích
+	-> Tạo lớp chứa hàm main, tạo đối tượng. dài rộng nhập từ bàn phím
+
+17. 
+Tạo lớp Virus có các thuộc tính: Màu sắc, tên, kích thước.
+Tạo constructor, pthuc get set, pthuc nhập và xuất.
+Xuất ra 3 loại virus khác nhau
 
 
 
