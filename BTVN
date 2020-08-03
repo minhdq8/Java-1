@@ -123,4 +123,15 @@ Xây dựng menu nhập thông tin người yêu cũ
 8. Sửa vòng 3 NYC theo tuổi
 0. Thoát
 
+22.Sử dụng ArrayList<SinhVien> để nắm giữ danh sách sinh viên. Thông tin mỗi sinh viên gồm họ tên và điểm trung bình.
+Viết chương trình thực hiện việc quản lý như menu sau:
+		1.Nhập danh sách sinh viên
+		2.Xuất danh sách sinh viên đã nhập
+		3.Xuất danh sách sinh viên theo khoảng điểm
+		4.Tìm sinh viên theo họ tên
+		5.Tìm và sửa điểm SV theo họ tên
+		6.Tìm và xóa theo họ tên
+		7.Tìm tất cả SV có chữ Minh trong tên
+		8.Sắp xếp SV theo Điểm(sử dụng lambda)
+		0.Kết thúc
 
