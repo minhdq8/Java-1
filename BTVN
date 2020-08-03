@@ -119,7 +119,8 @@ Xây dựng menu nhập thông tin người yêu cũ
 3. Tìm theo tên
 4. Tìm theo khoảng số đo vòng 3
 5. Tìm tất cả NYC có chữ "Ngoc Anh" trong tên
-6. Sắp xếp NYC theo số đo vòng 3
+6. Sắp xếp NYC theo số đo vòng 3 (lambda)
+7. SX NYC theo tên (lambda)
 8. Sửa vòng 3 NYC theo tuổi
 0. Thoát
 
