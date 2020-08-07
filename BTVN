@@ -138,3 +138,23 @@ Viết chương trình thực hiện việc quản lý như menu sau:
 		0.Kết thúc
 
 Link video 5/8: https://drive.google.com/file/d/1cbs3Ts2rbD8yG_Z59O8056t8aXjtfIKN/view?usp=sharing
+
+FPOLYHN -> 13h45
+(Đầu tiên chạy cái này, nhập đúng thì mới vào menu)
+		Nhập Username và PassWord: nếu user là PolyHN và pass là Java1 (Phần biệt hoa thường)
+		Nếu đúng -> login vào menu
+		Nếu sai -> thông báo lỗi.
+Sử dụng ArrayList<LaiMayBay> để nắm giữ danh sách thông tin bao gồm họ tên và cân nặng, vòng 1, email( có @),SĐT(10 số), tuổi thọ.
+
+Viết chương trình thực hiện việc quản lý như menu sau:
+		1.Nhập danh sách máy bay(bắt buộc)
+		2.Xuất danh sách máy bay đã nhập
+		3.Xuất danh sách máy bay theo khoảng vòng 1
+		4.Tìm máy bay theo họ tên
+		5.Tìm và sửa vòng 1 máy bay theo SĐT
+		6.Xóa 1 người theo SĐT
+		7.Tìm tất cả máy bay có chữ Minh trong tên
+		8.Xuất tất cả các máy bay có họ Thánh
+		9.Sắp xếp từ lớn -> bé theo vòng 1
+		10.In ra top 5 máy bay có vòng 1 to nhất
+		0.Kết thúc
