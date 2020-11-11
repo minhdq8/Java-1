@@ -44,3 +44,12 @@ sử dụng switch case để tạo menu hoàn chỉnh(while(true)).
 Link ĐKy Techday: https://techday2020.fpt.com.vn/
 https://drive.google.com/file/d/13niPhMWpez8JKaZV6SD905PlK9lYvZGY/view?usp=sharing,%20https://drive.google.com/file/d/1eDkKPm4qRxEoIJrJlev3R7CtyRz7mOnu/view?usp=sharing
 
+7. Nhập số lượng tóc (if hoặc ? :)
+	nếu SL tóc : 10 - 5000 => "hói như đầu vịt"
+	SL tóc >= 5000 => "đầu chỉ để mọc tóc"
+	SL tóc <= 10 => "Trọc như bóng đèn"
+
+8. Xuất bảng cửu chương full
+
+9. Tính trung bình cộng các số chia 
+hết cho 3 từ 27 đến 250.
