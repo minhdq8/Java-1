@@ -66,3 +66,30 @@ hết cho 3 từ 27 đến 250.
 ->In mảng, in max, in min cua mảng
 -> in ra các phần tử chia hết cho 3 và 2
 -> sắp xếp mảng từ bé đến lớn -> in ra màn hình
+
+13. Bách khoa toàn thư về bồ cũ(FpolyHN)
+Nhập tên:
+Nhập tuổi:
+Nhập số đo vòng 1:
+=> Tuổi TB của tất cả bồ cũ
+=> Trung bình số đo vòng 1 của tất cả bồ cũ
+=> In ra tên của bồ có tuổi chia hết cho 2
+=> In ra tuổi của bồ có vòng 1 lớn nhất
+
+=> in ra vòng 1 của người có tên dài nhất
+(tìm hiểu)
+
+mang[i].length() -> độ dài của từng cái tên
+
+
+14. Tạo lớp mô tả sinh viên bao gồm họ tên, điểm và các phương thức nhập, xuất và xếp loại học lực
+
+Tạo thêm file main, tạo đối tượng sv, nhập và xuất thông tin đối tượng đó bào gồm cả học lực
+
+
+*** tham số truyền vào và kiểu dữ liệu trả về
+
+
+15. Tạo lớp mô tả Laptop bao gồm tên hãng, version, giá tiền và các phương thức nhập, xuất và xếp loại theo version( trước 2018 -> cũ, sau 2018 -> mới).
+
+Tạo 2-3 loại đối tượng khác nhau. In ra info của các đối tượng đó
