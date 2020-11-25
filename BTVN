@@ -113,3 +113,17 @@ https://www.loom.com/share/d0d91f05bf2a4003973ef4aa251a11dc
 Tạo lớp Virus có các thuộc tính: Màu sắc, tên, kích thước.
 Tạo constructor, pthuc get set, pthuc nhập và xuất.
 Xuất ra 3 loại virus khác nhau
+
+18. ***(Khó)
+public class Main {
+    public static void main(String[] args) {
+        Author tacgia = new Author("minhDQ8", "minhdq8@fpt.edu.vn", "male", 23);
+
+        Book book = new Book("Java OOP", tacgia, 10, 100);
+
+        System.out.println(book.toString());
+    }
+}
+Run ra kết quả: 
+Java OOP, minhDQ8, 10.0, 100
+
