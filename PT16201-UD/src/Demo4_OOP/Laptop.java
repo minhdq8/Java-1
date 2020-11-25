@@ -14,9 +14,9 @@ import java.util.Scanner;
 public class Laptop {
 
     // thuộc tính
-    String brand;
-    int version;
-    double price;
+    private String brand;
+    public int version;
+    protected double price;
 
     // phương thức
     //constructor(hàm tạo, pthuc khởi tạo)

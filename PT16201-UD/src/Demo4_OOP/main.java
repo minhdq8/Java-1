@@ -14,25 +14,22 @@ public class main {
         // khai báo và khởi tạo 1 đối tượng laptop
         Laptop lt = new Laptop();
         // gán gtri cho thuộc tính của đối tượng lt
-        lt.mauSac = "trắng";
-        lt.hangSX = "Macbook";
-        lt.namSX = 2016;
-        lt.xemVideo();
+        lt.price =  23;
         
-        System.out.println(lt.hangSX);
-        
-        Laptop lt2 = new Laptop(2016);
-        lt2.mauSac = "xi đèn đèn";
-        lt2.xemVideo();
-        lt2.goNatPhim();
-        
-        Laptop lt3 = new Laptop("đen", 2020, "Apple");
-        System.out.println("====");
-        lt.xuat();
-        
-        System.out.println(lt);
-        
-        System.out.println(lt2);
-        System.out.println(lt3);
+//        System.out.println(lt.hangSX);
+//        
+//        Laptop lt2 = new Laptop(2016);
+//        lt2.mauSac = "xi đèn đèn";
+//        lt2.xemVideo();
+//        lt2.goNatPhim();
+//        
+//        Laptop lt3 = new Laptop("đen", 2020, "Apple");
+//        System.out.println("====");
+//        lt.xuat();
+//        
+//        System.out.println(lt);
+//        
+//        System.out.println(lt2);
+//        System.out.println(lt3);
     }
 }
