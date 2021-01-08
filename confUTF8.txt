@@ -1,0 +1,6 @@
+Go to etc folder in Netbeans home --> open -> etc -> netbeans.conf file 
+and add on netbeans_default_options following line:
+
+-J-Dfile.encoding=UTF-8
+
+Restart Netbeans and it should be in UTF-8

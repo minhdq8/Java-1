@@ -1,0 +1,60 @@
+﻿Tìm kiếm và thay thế
+Ctrl-F3: tìm từ tại vị trí con trỏ chuột
+F3/Shift-F3: tìm từ kế tiếp/trước đó trong file
+Ctrl-F/H: tìm/thay thế từ trong file
+Alt-F7: tìm vị trí hàm được sử dụng trong projects
+Ctrl-R: đổi tên biến tại con trỏ chuột
+Alt-Shift-L: copy  đường dẫn của file đang mở
+Coding trong Java
+Alt-Insert: sinh ra code
+Ctrl-Shift-I: tự động imports class cần thiết
+Alt-Shift-F: định dạng code
+Ctrl-Shift-Up/D: copy dòng tại con trỏ chuột
+Ctrl-/: bật tắt comment
+Ctrl-E/X: xóa dòng tại con trỏ chuột
+Biên dịch, kiểm tra và chạy project
+F9: biên dịch package/file
+F11: build project chính
+Shift-F11: xóa và build project chính
+Shift-F6: chạy file hiện tại
+F6: chạy project
+Debugging
+Ctrl-F5: bắt đầu debugging project chính
+Ctrl-Shift-F5: bắt đầu debugging file hiện tại
+Ctrl-Shift-F6: bắt đầu debugging file
+Ctrl-Shift-F8: đặt breakpoint mới
+Khác
+Tool-->Options--> KeyMaps: chọn Generate Javadoc: tự động tạo javadoc của project cho bạn
+Một số phím tắt thú vị khác
+1. Gõ fcom rồi nhấn tab. Bạn sẽ được đoạn code sau:
+//<editor-fold defaultstate="collapsed" desc="comment">
+//</editor-fold>
+2. Gõ bcom rồi nhấn tab. Bạn sẽ được đoạn code sau:
+/**/
+3. Gõ runn rồi nhấn tab. Bạn sẽ được đoạn code sau:
+Runnable runnable = new Runnable() {
+                    public void run() {
+                       
+                    }
+                };
+4. Gõ forst rồi nhấn tab. Bạn sẽ được đoạn code sau:
+for (StringTokenizer stringTokenizer = new StringTokenizer(line); stringTokenizer.hasMoreTokens();) {
+                    String token = stringTokenizer.nextToken();
+                    
+                }
+5. Gõ sout rồi nhấn tab. Bạn sẽ được đoạn code sau:
+System.out.println("");
+
+6. Gõ ifelse rồi nhấn tab. Bạn sẽ được đoạn code sau:
+if (true) {
+                    
+                } else {
+                }
+7. Gõ sw rồi nhấn tab. Bạn sẽ được đoạn code sau:
+switch (var) {
+                    case val:
+                        
+                        break;
+                    default:
+                        throw new AssertionError();
+                }
