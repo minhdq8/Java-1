@@ -21,3 +21,16 @@ còn lại -> in ra thông báo"Khoẻ như trâu, covid cũng sợ"
 4. Nhập số đo 3 vòng của ng yêu cũ
 biết số đo vòng 1 hệ số 3, vòng 3 hệ số 2.
 => in ra TBC của 3 vòng
+5. Nhập lương :
+	Nhập chức vụ:
+	-> tính thuế 10% nếu lương > 9tr
+	-> In ra lương được nhận ( = lương - thuế)
+	
+6. Xây dựng menu để nhập và xuất thông tin 
+Bồ cũ của mình(Tên, tuổi, vòng 1)
+	1. Nhập thông tin
+	2. Xuất thông tin
+	3. Siêu thoát
+
+6. tạo hàm menu, các bài tập từ 1-5 chuyển thành hàm
+sử dụng switch case để tạo menu hoàn chỉnh(while(true)).
