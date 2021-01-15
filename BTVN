@@ -34,3 +34,8 @@ Bồ cũ của mình(Tên, tuổi, vòng 1)
 
 6. tạo hàm menu, các bài tập từ 1-5 chuyển thành hàm
 sử dụng switch case để tạo menu hoàn chỉnh(while(true)).
+
+7.Nhập thông tin cá nhân bao gồm tên, tuổi, cân nặng, chiều cao.
+-Viết hàm có tham số truyền vào để in thông tin
+-Viết hàm có KDL trả về tính tổng cân nặng + chiều cao
+-Viết hàm có KDL, có tham số truyền vào là tuổi và cân nặng. Hàm trả về tuổi thọ = tuổi + cân nặng
