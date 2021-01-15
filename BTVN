@@ -39,3 +39,11 @@ sử dụng switch case để tạo menu hoàn chỉnh(while(true)).
 -Viết hàm có tham số truyền vào để in thông tin
 -Viết hàm có KDL trả về tính tổng cân nặng + chiều cao
 -Viết hàm có KDL, có tham số truyền vào là tuổi và cân nặng. Hàm trả về tuổi thọ = tuổi + cân nặng
+
+8. Viết chương trình cho  nhập vào 3 số thực
+Sau đó kiểm tra 3 số này có phải là 3 cạnh của một tam giác hay không.(tổng 2 cạnh bất kỳ > cạnh còn lại)
+9. Nhập vào số đo vòng 1 và vòng 3 số bất kỳ 
+ -> hàm xuất ra hiệu và tích 2 số đo ( sử dụng tham số, KDL trả về)
+ -> hàm xuất ra tổng của hiệu + tích
+ -> hàm xuất ra tổng mũ 2 ( sử dụng tham số)
+ -> hàm xuất ra chuỗi " Đạt chuẩn" nếu vòng 1 >= 90 (sử dụng tham số)
