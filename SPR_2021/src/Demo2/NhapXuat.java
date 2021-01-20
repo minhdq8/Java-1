@@ -13,10 +13,11 @@ import java.util.Scanner;
  */
 public class NhapXuat {
     static Scanner sc = new Scanner(System.in);
-    static String name;
+    public static String name = "minh chì đen";
     static int age;
     
     public static void main(String[] args) {
+
         while(true){
             menu();
         }
@@ -61,7 +62,7 @@ public class NhapXuat {
     }
 
     public static void xuatInfo() {
-//        String name = "cục bộ";
+//        String name = " ok bayby";
         System.out.println(name + age);
     }
 }

@@ -5,8 +5,6 @@
  */
 package Demo2;
 
-import static Demo2.NhapXuat.age;
-import static Demo2.NhapXuat.sc;
 import java.util.Scanner;
 
 /**
@@ -43,7 +41,8 @@ public class ThamSo_KDL {
             case 2:
                 int ccc = Integer.parseInt(sc.nextLine());
                 int xxx = Integer.parseInt(sc.nextLine());
-                tinhTong(xxx, xxx);
+                double bbb = 9.5;
+                tinhTong(ccc, bbb);
                 break;
             case 3:
                 System.out.println(tinhTong1()); //tinhTong1();
@@ -65,21 +64,20 @@ public class ThamSo_KDL {
                 break;
         }
     }
-//hàm ko có tham số, ko có KDL trả về
+    //hàm ko có tham số, ko có KDL trả về
     public static void tinhTong() {
         int a = 10, b = 10;
         System.out.println(a + b);
     }
-// có tham số, ko có KDL trả về
+    // có tham số, ko có KDL trả về
     public static void tinhTong(int a, int b) {
         System.out.println(a + b);
     }
     // có KDL trả về, ko có tham số
     public static int tinhTong1() {
         int a = 1, b = 2;
-        return a + b; // trả về giá trị của hàm
+        return a+b; // trả về giá trị của hàm
     }
-
     // có KDL trả về, có tham số truyền vào
     public static int tinhTong1(int a, int b) {
         return a + b;
