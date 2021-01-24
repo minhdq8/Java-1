@@ -75,4 +75,9 @@ https://driveuploader.com/upload/zpUoSHLDrn/
 14. Tạo lớp mô tả sinh viên bao gồm họ tên, điểm và các phương thức nhập, xuất và xếp loại học lực
 
 Tạo thêm file main, tạo đối tượng sv, nhập và xuất thông tin đối tượng đó bào gồm cả học lực
+*** tham số truyền vào và kiểu dữ liệu trả về
 
+
+15. Tạo lớp mô tả Laptop bao gồm tên hãng, version, giá tiền và các phương thức nhập, xuất và xếp loại theo version( trước 2018 -> cũ, sau 2018 -> mới).
+
+Tạo 2-3 loại đối tượng khác nhau. In ra info của các đối tượng đó
