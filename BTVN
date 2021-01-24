@@ -72,4 +72,7 @@ https://driveuploader.com/upload/mA1bvWuZpg/
 Link lớp PT1631F-WEB
 https://driveuploader.com/upload/zpUoSHLDrn/
 
+14. Tạo lớp mô tả sinh viên bao gồm họ tên, điểm và các phương thức nhập, xuất và xếp loại học lực
+
+Tạo thêm file main, tạo đối tượng sv, nhập và xuất thông tin đối tượng đó bào gồm cả học lực
 
