@@ -82,5 +82,15 @@ Tạo thêm file main, tạo đối tượng sv, nhập và xuất thông tin đ
 
 Tạo 2-3 loại đối tượng khác nhau. In ra info của các đối tượng đó
 
+16. Viết chương trình tính diện tích, chu vi hình chữ nhật.
+	-> Tạo lớp HinhChuNhat bao gồm:
+	 - thuộc tính: chiều dài, chiều rộng
+	 - pthuc: setter và getter
+	 - pthuc tính diện tích, chu vi
+	 - pthuc toString gồm các thông tin: dài, rộng, chu vi, diện tích
+	-> Tạo lớp chứa hàm main, tạo đối tượng HinhChuNhat. dài rộng nhập từ bàn phím
+
 Link 1: demo OOP
 https://www.loom.com/share/ab1dcc3f399646828d45998f6be48791
+Link 2: demo OOP(P2)
+https://www.loom.com/share/d0d91f05bf2a4003973ef4aa251a11dc
