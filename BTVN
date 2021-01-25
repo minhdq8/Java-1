@@ -89,6 +89,11 @@ Tạo 2-3 loại đối tượng khác nhau. In ra info của các đối tượ
 	 - pthuc tính diện tích, chu vi
 	 - pthuc toString gồm các thông tin: dài, rộng, chu vi, diện tích
 	-> Tạo lớp chứa hàm main, tạo đối tượng HinhChuNhat. dài rộng nhập từ bàn phím
+17. 
+Tạo lớp Virus có các thuộc tính: Màu sắc, tên, kích thước.
+Tạo constructor, pthuc get set, pthuc nhập và xuất.
+Xuất ra 3 loại virus khác nhau
+
 
 Link 1: demo OOP
 https://www.loom.com/share/ab1dcc3f399646828d45998f6be48791
