@@ -103,3 +103,15 @@ https://www.loom.com/share/d0d91f05bf2a4003973ef4aa251a11dc
 
 18. Xây dựng menu nhập, xuất thông tin của GĐ bạn.
 
+19. FPOLY
+Xây dựng class NguoiYeuXXX bao gồm tên, tuổi, số đo vòng 3
+Xây dựng menu nhập thông tin người yêu cũ
+1. Nhập thông tin NYC
+2. Xuất danh sách NYC
+3. Tìm theo tên
+4. Tìm theo khoảng số đo vòng 3
+5. Tìm tất cả NYC có chữ "PhươngAnh" trong tên
+6. Sắp xếp NYC theo số đo vòng 3
+7. Sửa vòng 3 NYC theo tuổi
+8. in ra tên của ng yêu cuối cùng, đầu tiên
+0. Thoát
