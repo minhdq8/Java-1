@@ -115,3 +115,9 @@ Xây dựng menu nhập thông tin người yêu cũ
 7. Sửa vòng 3 NYC theo tuổi
 8. in ra tên của ng yêu cuối cùng, đầu tiên
 0. Thoát
+
+20. Bổ sung: 
+Validate thông tin khi nhập dữ liệu.
+Mã : 7 ký tự, bắt đầu là PH + 5 số
+Tên: min 3 ký tự, max 40
+Lương: là số dương, từ 1 -> 50 tr
