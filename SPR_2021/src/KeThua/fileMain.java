@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sauTet;
+package KeThua;
 
 import java.util.Scanner;
 
@@ -13,9 +13,13 @@ import java.util.Scanner;
  */
 public class fileMain {
     public static void main(String[] args) {
-        QLNhanVien nv = new QLNhanVien();
-        Scanner sc = new Scanner(System.in);
-        nv.menu();
+       NhanVien nv = new NhanVien("1", "Minh", 9900000);
+       nv.xuatThongTin();
+       
+       TruongPhong tp = new TruongPhong(300000, "12", "Thái", 12000000);
+       tp.xuatThongTin();
+        
+        
 //        String user = "Minh";
 //        String pass = "java";
 //        
