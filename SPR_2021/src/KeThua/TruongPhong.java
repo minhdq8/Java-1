@@ -10,19 +10,18 @@ package KeThua;
  * @author minhdq
  */
 public class TruongPhong extends NhanVien{
+
     double trachNhiem;
-
-    public TruongPhong(String manv, String hoTen, double luong) {
-        super(manv, hoTen, luong);
-    }
-
+    
     public TruongPhong(double trachNhiem, String manv, String hoTen, double luong) {
         super(manv, hoTen, luong);
         this.trachNhiem = trachNhiem;
     }
     
+    @Override
     public void xuatThongTin(){
         super.xuatThongTin();
         System.out.println("Trách nhiệm: " + trachNhiem);
     }
+
 }

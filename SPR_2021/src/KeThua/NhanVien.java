@@ -57,7 +57,7 @@ public class NhanVien {
         return luong - getThueTN();
         
     }
-    public double getThueTN(){
+    private double getThueTN(){
         double thue = 0;
         if(thue > 9000000){
             thue = luong * 0.1;

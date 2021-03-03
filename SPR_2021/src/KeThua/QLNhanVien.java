@@ -88,10 +88,26 @@ public class QLNhanVien {
             String hoTen = sc.nextLine();
             System.out.print("Nhập lương:");
             double luong = Double.parseDouble(sc.nextLine());
-
-            NhanVien nv = new NhanVien(maNV, hoTen, luong);
-            listNV.add(nv);
-
+            
+            
+            System.out.println("1. Nhân viên");
+            System.out.println("2. Trưởng phòng");
+            System.out.print("Lựa chọn chức vụ: ");
+            int chucVu = Integer.parseInt(sc.nextLine());
+            
+            switch(chucVu){
+                case 1: 
+                    NhanVien nv = new NhanVien(maNV, hoTen, luong);
+                    listNV.add(nv);
+                    break;
+                case 2:
+                    System.out.println("Nhập lương trách nhiệm: ");
+                    double trachNhiem = Double.parseDouble(sc.nextLine());
+                    TruongPhong tp = new TruongPhong(trachNhiem, maNV, hoTen, luong);
+                    listNV.add(tp);
+                    break;
+            }
+            
             System.out.print("Y/N?");
             if (sc.nextLine().equals("N")) {
                 break;
@@ -139,20 +155,22 @@ public class QLNhanVien {
         Comparator<NhanVien> sxLuong = new Comparator<NhanVien>(){
             @Override
             public int compare(NhanVien n1, NhanVien n2){
-                return Double.compare(n1.getLuong(),n2.getLuong());
+                return Double.compare(n2.getLuong(),n1.getLuong());
 
             }
         };
-        System.out.println("SX theo tên");
-        Collections.sort(listNV, sxTen);
-        for(NhanVien x : listNV){
-            System.out.println(x);
-        }
+//        System.out.println("SX theo tên");
+//        Collections.sort(listNV, sxTen);
+//        for(NhanVien x : listNV){
+//            System.out.println(x);
+//        }
         System.out.println("SX theo lương");
         Collections.sort(listNV, sxLuong);
         for(NhanVien x : listNV){
             System.out.println(x);
         }
+        
+//        Collections.sort(listNV, (o1,o2)-> o1.getHoTen().compareTo(o2.getHoTen()));
     }
         
         

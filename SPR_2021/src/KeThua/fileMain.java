@@ -18,7 +18,7 @@ public class fileMain {
        
        TruongPhong tp = new TruongPhong(300000, "12", "Thái", 12000000);
        tp.xuatThongTin();
-        
+       
         
 //        String user = "Minh";
 //        String pass = "java";
