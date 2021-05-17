@@ -1,0 +1,14 @@
+﻿Kết thúc lần đọc thứ nhất, 
+do ở dòng hoa = keyboard.nextFloat();
+ nó chỉ đọc số mà bạn nhập cả số và
+ ký tự newline “\n” (phím Enter)
+ nên vẫn còn thừa 1 ký tự “\n” trong input, 
+vì thế khi vào lần đọc thứ 2 nó đọc ký tự “\n” 
+trong input luôn.
+
+Phương pháp:
+
+Cách 1: Gọi tiếp lệnh keyboard.nextLine(); 
+ở giữa hai lệnh đọc số và đọc string.
+Cách 2: Coi tất cả input là String, chỉ dùng keyboard.
+nextLine(); để đọc, cái nào là số thì convert sang số.

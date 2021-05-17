@@ -1,0 +1,123 @@
+1. Nhập họ tên, tuổi, thu nhập có kiểu dữ liệu phù hợp
+-> in ra thông tin vừa nhập
+
+2. Nhập vào tuổi bạn và tuổi người yêu bạn
+-> tính& in ra tuổi thọ của bạn biết 
+tuổi thọ = tuổi bạn + tuổi ng yêu =))
+
+3.  Thông tin người yêu cũ
+	Nhập tên:
+	Nhập số đo vòng 3:
+	Nhập dáng: 
+	Nhập chiều cao: 
+	=> show thông tin vừa nhập sử dụng printf
+
+3. Nhập thông tin Sức khoẻ
+Nhập tên, nhập tình trạng, nhập nhiệt độ
+-> nếu nhiệt độ > 38 -> in ra thông báo "Khám nhanh covid giờ"
+còn lại -> in ra thông báo"Khoẻ như trâu, covid cũng sợ"
+=> IN ra tất cả thông tin
+
+4. Nhập số đo 3 vòng của ng yêu cũ
+biết số đo vòng 1 hệ số 3, vòng 3 hệ số 2.
+=> in ra TBC của 3 vòng
+5. Nhập lương :
+	Nhập chức vụ:
+	-> tính thuế 10% nếu lương > 9tr
+	-> In ra lương được nhận ( = lương - thuế)
+	
+6. Xây dựng menu để nhập và xuất thông tin 
+Bồ cũ của mình(Tên, tuổi, vòng 1)
+	1. Nhập thông tin
+	2. Xuất thông tin
+	3. Siêu thoát
+
+6. tạo hàm menu, các bài tập từ 1-5 chuyển thành hàm
+sử dụng switch case để tạo menu hoàn chỉnh(while(true)).
+
+7.Nhập thông tin cá nhân bao gồm tên, tuổi, cân nặng, chiều cao.
+-Viết hàm có tham số truyền vào để in thông tin
+-Viết hàm có KDL trả về tính tổng cân nặng + chiều cao
+-Viết hàm có KDL, có tham số truyền vào là tuổi và cân nặng. Hàm trả về tuổi thọ = tuổi + cân nặng
+
+8. Viết chương trình cho  nhập vào 3 số thực
+Sau đó kiểm tra 3 số này có phải là 3 cạnh của một tam giác hay không.(tổng 2 cạnh bất kỳ > cạnh còn lại)
+9. Nhập vào số đo vòng 1 và vòng 3 số bất kỳ 
+ -> hàm xuất ra hiệu và tích 2 số đo ( sử dụng tham số, KDL trả về)
+ -> hàm xuất ra tổng của hiệu + tích
+ -> hàm xuất ra tổng mũ 2 ( sử dụng tham số)
+ -> hàm xuất ra chuỗi " Đạt chuẩn" nếu vòng 1 >= 90 (sử dụng tham số)
+ 
+9. Tính trung bình cộng các số chia hết cho 5 từ 27 đến 999.
+
+
+10. Nhập vào mảng cân nặng của gđ
+-> in ra cân nặng lớn hơn 50 kg
+-> in ra những cân nặng chia hết cho 2
+-> in ra cân nặng lớn nhất
+
+11. Nhập vào tên và tuổi của cả gia đình
+ -> in ra tên tuổi của cả nhà
+ -> in ra thông tin của ng cao tuổi nhất
+
+12. Nhập mảng số bất kỳ
+->In mảng, in max, in min cua mảng
+-> in ra các phần tử chia hết cho 3 và 2
+-> sắp xếp mảng từ bé đến lớn -> in ra màn hình
+
+
+Link lớp PT1635A-MOB
+https://driveuploader.com/upload/mA1bvWuZpg/
+
+Link lớp PT1631F-WEB
+https://driveuploader.com/upload/zpUoSHLDrn/
+
+14. Tạo lớp mô tả sinh viên bao gồm họ tên, điểm và các phương thức nhập, xuất và xếp loại học lực
+
+Tạo thêm file main, tạo đối tượng sv, nhập và xuất thông tin đối tượng đó bào gồm cả học lực
+*** tham số truyền vào và kiểu dữ liệu trả về
+
+
+15. Tạo lớp mô tả Laptop bao gồm tên hãng, version, giá tiền và các phương thức nhập, xuất và xếp loại theo version( trước 2018 -> cũ, sau 2018 -> mới).
+
+Tạo 2-3 loại đối tượng khác nhau. In ra info của các đối tượng đó
+
+16. Viết chương trình tính diện tích, chu vi hình chữ nhật.
+	-> Tạo lớp HinhChuNhat bao gồm:
+	 - thuộc tính: chiều dài, chiều rộng
+	 - pthuc: setter và getter
+	 - pthuc tính diện tích, chu vi
+	 - pthuc toString gồm các thông tin: dài, rộng, chu vi, diện tích
+	 - Tạo lớp chứa hàm main, tạo đối tượng HinhChuNhat. Nhập chiều dài. rộng. 
+	-> in ra chu vi diện tích
+17. 
+Tạo lớp Virus có các thuộc tính: Màu sắc, tên, kích thước.
+Tạo constructor, pthuc get set, pthuc nhập và xuất.
+Xuất ra 3 loại virus khác nhau
+
+
+Link 1: demo OOP
+https://www.loom.com/share/ab1dcc3f399646828d45998f6be48791
+Link 2: demo OOP(P2)
+https://www.loom.com/share/d0d91f05bf2a4003973ef4aa251a11dc
+
+18. Xây dựng menu nhập, xuất thông tin của GĐ bạn.
+
+19. FPOLY
+Xây dựng class NguoiYeuXXX bao gồm tên, tuổi, số đo vòng 3
+Xây dựng menu nhập thông tin người yêu cũ
+1. Nhập thông tin NYC
+2. Xuất danh sách NYC
+3. Tìm theo tên
+4. Tìm theo khoảng số đo vòng 3
+5. Tìm tất cả NYC có chữ "PhươngAnh" trong tên
+6. Sắp xếp NYC theo số đo vòng 3
+7. Sửa vòng 3 NYC theo tuổi
+8. in ra tên của ng yêu cuối cùng, đầu tiên
+0. Thoát
+
+20. Bổ sung: 
+Validate thông tin khi nhập dữ liệu.
+Mã : 7 ký tự, bắt đầu là PH + 5 số
+Tên: min 3 ký tự, max 40
+Lương: là số dương, từ 1 -> 50 tr
