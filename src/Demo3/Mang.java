@@ -5,6 +5,7 @@
  */
 package Demo3;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -19,17 +20,19 @@ public class Mang {
         System.out.print("Mời nhập size của mảng: " );
         int size = Integer.parseInt(sc.nextLine());
         // b2 khai báo vs khởi tạo mảng
-        int _tuoi[] = new int[size];
+        double _canNang[] = new double[size];
         // b3 nhập từng phẩn tử cho mảng
-        for (int i = 0; i < _tuoi.length; i++) {
+        for (int i = 0; i < _canNang.length; i++) {
             System.out.printf("Nhập phần tử thứ %d: ",(i + 1));
-            _tuoi[i] = Integer.parseInt(sc.nextLine());
+            _canNang[i] = Double.parseDouble(sc.nextLine());
         }
         // b4 xuất mảng
         System.out.println("Mảng vừa nhập là: ");
-        for(int i = 0; i < _tuoi.length; i++){
-            System.out.println(_tuoi[i]);
+        for(int i = 0; i < _canNang.length; i++){
+            System.out.println(_canNang[i]);
         }
+        Arrays.sort(_canNang);// sắp xếp từ bé -> lớn
+        System.out.println(Arrays.toString(_canNang));
     }
 
     public static void main01(String[] args) {
