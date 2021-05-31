@@ -35,13 +35,21 @@ public class bai16 {
             _tuoi[i] = Integer.parseInt(sc.nextLine());
         }
         System.out.println("Tên cả nhà: ");
-        for (int i = 0; i < size; i++) {
-            System.out.println("Tên " + _hoTen[i] + _tuoi[i] + " tuổi");
-        }
+        System.out.println(Arrays.toString(_tuoi));
+        System.out.println(Arrays.toString(_hoTen));
         
-        Arrays.sort(_tuoi);
-        System.out.println(_tuoi[size -1]);
-        Arrays.sort(_hoTen);
-        System.out.println(_hoTen[size - 1]);
+//        for (int i = 0; i < size; i++) {
+//            System.out.println("Tên " + _hoTen[i] + _tuoi[i] + " tuổi");
+//        }
+        
+        Arrays.sort(_tuoi);// sắp xếp từ bé -> lớn
+        System.out.println(Arrays.toString(_tuoi));
+        
+//        for (int i = 0; i < size; i++) {
+//            System.out.println("Tên " + _hoTen[i] + _tuoi[i] + " tuổi");
+//        }
+//        System.out.println(_tuoi[size -1]);
+//        Arrays.sort(_hoTen);
+//        System.out.println(_hoTen[size - 1]);
     }
 }
