@@ -17,18 +17,23 @@ public class QLDienThoai {
 //        iphone.mauSac = "Xanh dương";
 //        iphone.ten = "Iphone 12 Pro max";
 //        iphone.hangSX = "Apple cắn dở";
-        iphone.nhapTT();
+//        iphone.nhapTT();
+//        
+//        iphone.choiDienTu();
+//        iphone.noiChuyen();
         
-        iphone.choiDienTu();
-        iphone.noiChuyen();
-        
-        DienThoai samSung = new DienThoai();
-        samSung.namSX = 2021;
-        samSung.mauSac = "đen tuyền";
+        DienThoai samSung = new DienThoai("aa", "bbb", 0, "cc");
+        samSung.choiDienTu();
+
         
     }
 }
 /*
+OOP: 4 tính chất
+    Đóng gói, kế thừa, trừu tượng, đa hình
+
+
+
 Tạo class hình học
 - thuộc tính
 -pthuc:nhập, diện tích, chu vi

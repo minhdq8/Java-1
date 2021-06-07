@@ -12,19 +12,48 @@ import java.util.Scanner;
  * @author minhdq
  */
 public class LapTop {
+
     // thuộc tính
-    public String tenHang;
-    public int namSX;
-    public double giaTien;
+    String tenHang;
+// default: public cùng gói, private khác gói
+    private int namSX;// chỉ trong class
+    public double giaTien;// thoải mái
     // phương thức
+
+    public String getTenHang() {
+        return tenHang;
+    }
+
+    public void setTenHang(String tenHang) {
+        this.tenHang = tenHang;
+    }
+
+    public int getNamSX() {//lấy giá trị thuộc tính
+        return namSX;
+    }
+
+    public void setNamSX(int namSX) {// gán gtri cho thuộc tính
+        this.namSX = namSX;
+    }
+
+    public double getGiaTien() {
+        return giaTien;
+    }
+
+    public void setGiaTien(double giaTien) {
+        this.giaTien = giaTien;
+    }
+
     public LapTop(String tenHang, int namSX, double giaTien) {
         this.tenHang = tenHang;
         this.namSX = namSX;
         this.giaTien = giaTien;
     }
+
     public LapTop(int namSX) {
         this.namSX = namSX;
     }
+
     public void nhapTT() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Nhập hãng:");
@@ -34,20 +63,16 @@ public class LapTop {
         System.out.print("Nhập giá:");
         this.giaTien = Double.parseDouble(sc.nextLine());
     }
+
     @Override
     public String toString() {
         return "LapTop{" + "tenHang=" + tenHang + ", namSX=" + namSX + ","
-                + " giaTien=" + giaTien + " xếp loại: "+xepLoai()+ '}';
+                + " giaTien=" + giaTien + " xếp loại: " + xepLoai() + '}';
     }
-    public String xepLoai(){
+
+    public String xepLoai() {
         String xl = this.namSX > 2018 ? "Mới" : "Cũ rích";
         return xl;
     }
-    public static void main(String[] args) {
-        LapTop lt = new LapTop("macbook", 2021, 2000);
-        System.out.println(lt.toString());
 
-        LapTop lt2 = new LapTop(2016);
-        System.out.println(lt2.toString());
-    }
 }

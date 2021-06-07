@@ -20,6 +20,25 @@ public class DienThoai {
     String mauSac;
 
     // phương thức
+    // constructor. pthuc khỏi tạo. 
+    // mặc định có constructor ko tham số
+    // tạo 1 constructor khác ->thì mặc định bị mất  đi
+    // ko có KDL & trùng tên class
+    public DienThoai(){
+        
+    }
+    public DienThoai(String ten, String hangSX, int namSX, String mauSac) {
+        this.ten = ten;
+        this.hangSX = hangSX;
+        this.namSX = namSX;
+        this.mauSac = mauSac;
+    }
+//
+//    public DienThoai(String ten, int namSX) {
+//        this.ten = ten;
+//        this.namSX = namSX;
+//    }
+    
     public void nhapTT() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Nhập tên: ");
