@@ -38,8 +38,9 @@ public class QLSV {
             System.out.println("5. Tìm SV theo tên");
             System.out.println("6. Xoá SV theo mã");
             System.out.println("7. Sắp xếp SV theo điểm");
-            System.out.println("8. In ra điểm của SV ở vị trí cuối cùng");
+            System.out.println("8. In ra điểm của SV ở vị trí bất kỳ");
             System.out.println("9. Sửa thông tin SV");
+            System.out.println("10. In ra top 3 theo điểm");
 
             System.out.println("0. Kết thúc");
 
@@ -76,6 +77,9 @@ public class QLSV {
                 case 9:
                     suaTT();
                     break;
+                case 10:
+                    top3Diem();
+                    break;
                 case 0:
                     System.exit(0);
                     break;
@@ -87,30 +91,37 @@ public class QLSV {
     }
 
     public void diemViTri() {
-        System.out.println(listSV.get(listSV.size() - 1).getDiem());
+        int viTri = listSV.size();
+        // lấy ra đối tượng-> lấy điểm vị trí cuối cùng
+        System.out.println(listSV.get(viTri - 1).getDiem());
+    }
 
+    public void top3Diem() {
+        Collections.sort(listSV, (o1, o2) -> Double.compare(o1.getDiem(), o2.getDiem()));
+        Collections.reverse(listSV);// đảo ngược list
+        for (int i = 0; i < 3; i++) {
+            System.out.println(listSV.get(i));
+        }
     }
 
     public void suaTT() {
-        int dem = 0;
-        System.out.print("Nhập mã SV cần sửa: ");
-        String maSV = sc.nextLine();
-
-        for (SinhVienPoly x : listSV) {
-            if (maSV.equalsIgnoreCase(x.getMssv())) {
-                System.out.print("Mời nhập tên: ");
-                String name = sc.nextLine();
+        System.out.print("Mời nhập mã cần sửa: ");
+        String maNhap = sc.nextLine();
+        int viTri = 0;
+        for (SinhVienPoly xxx : listSV) {
+            if (maNhap.equalsIgnoreCase(xxx.getMssv())) {
                 System.out.print("Mời nhập điểm: ");
                 double grade = Double.parseDouble(sc.nextLine());
-                
-                SinhVienPoly sv = new SinhVienPoly(name, grade, maSV);
-                
-                listSV.set(dem, sv);
+                System.out.print("Mời nhập tên: ");
+                String name = sc.nextLine();
+            
+//                viTri = listSV.indexOf(xxx);
+//                SinhVienPoly aaa = new SinhVienPoly(name, grade, maNhap);
+                listSV.set(listSV.indexOf(xxx), new SinhVienPoly(name, grade, maNhap));
                 break;
-            } 
-            dem++;
+            }
         }
-        
+
     }
 
     public void xoaSVMa() {
@@ -129,7 +140,6 @@ public class QLSV {
     public void sapXepDiem() {
         Collections.sort(listSV, (o1, o2) -> Double.compare(o1.getDiem(), o2.getDiem()));
 //        Collections.reverse(listSV);// đảo ngược
-
         xuat();
     }
 
