@@ -21,9 +21,9 @@ public class SinhVienPoly {
         this.mssv = mssv;
     }
 
-    public SinhVienPoly(double diem, String mssv) {
+    public SinhVienPoly(String hoTen, double diem) {
+        this.hoTen = hoTen;
         this.diem = diem;
-        this.mssv = mssv;
     }
 
     public SinhVienPoly() {

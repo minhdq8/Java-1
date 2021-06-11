@@ -3,16 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Demo5;
+package DemoL6;
 
 /**
  *
  * @author minhdq
  */
-public class fileMain {
+public class TryCatch {
     public static void main(String[] args) {
-        QLSV qly = new QLSV();
-        
-        qly.menu();
+        try {
+            int []a = {5,6,7};
+            System.out.println(a[5]);
+        } catch (Exception e) {
+            System.out.println("Index ko tồn tại");
+        }
     }
 }
