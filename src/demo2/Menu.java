@@ -14,47 +14,63 @@ import java.util.Scanner;
 public class Menu {
 
     static Scanner _sc = new Scanner(System.in);
-    static int _tuoi;
-    
+    static int _tuoi = 10;
+
     public static void main(String[] args) {
-        while (true) {
+        while(true){
             menu();
         }
     }
-    // hàm, fuction
+    // định nghĩa hàm
     public static void menu() {
-        
-        System.out.println("1. Tính lương");
-        System.out.println("2. Tính thuế");
+        System.out.println("========MENU========");
+        System.out.println("1. Rủ đi xem film");
+        System.out.println("2. Ra hồ tây hóng ...");
+        System.out.println("3. Cách ly theo cặp");
         System.out.println("0. Siêu thoát");
-        System.out.println("----------------");
-        System.out.print("Mời nhập sự lưa chọn: ");
-        int luaChon = Integer.parseInt(_sc.nextLine());
-        switch (luaChon) {
+        System.out.println("===================");
+
+        System.out.print("Nhập sự lựa chọn: ");
+        int _luaChon = Integer.parseInt(_sc.nextLine());
+
+        switch (_luaChon) {
             case 1:
-                tinhLuong();
+                xemFilm();// cách gọi hàm
                 break;
             case 2:
-                tinhThue();
+                dapXe();
+                break;
+            case 3:
+                vongLap();
+                System.out.println("Sống chết có nhau");
                 break;
             case 0:
                 System.exit(0);
+                break;
             default:
-                System.out.println("Nhập từ 1->3 thôi");
+                System.out.println("Mắt điếc à? từ 0-3 thôi thánh");
+                break;
         }
     }
-
-    public static void tinhLuong() {
-        
-        double _luong = 100000;
-        _luong = _sc.nextDouble();
-        System.out.println(_luong * 10);
+    public static void xemFilm() {
+        System.out.println("Film hành động");
+        System.out.println(_tuoi);
     }
-
-    public static void tinhThue() {
-        
-        double thue = 1000;
-        System.out.println(thue*0.1);
-        
+    public static void dapXe() {
+        int _tuoi = 20;
+        System.out.println("Đạp đạp đạp mãi đạp nữa");
+        System.out.println(_tuoi);
+    }
+    public static void vongLap(){
+//        for(int i = 0; i < 5; i++ ){
+//            System.out.println(i);
+//        }
+        while(_tuoi < 18){
+            System.out.println("Còn lâu mới biết thế nào là + ");
+            _tuoi ++;
+        }
+//        do {            
+//            System.out.println("in ít nhất 1 lần");
+//        } while (_tuoi < 5);
     }
 }
