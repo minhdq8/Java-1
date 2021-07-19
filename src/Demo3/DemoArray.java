@@ -5,8 +5,7 @@
  */
 package Demo3;
 
-import java.util.Scanner;
-
+import java.util.*;
 /**
  *
  * @author minhdq
@@ -29,16 +28,25 @@ public class DemoArray {
         int _size = Integer.parseInt(_sc.nextLine());
         //b2 khai bái, khởi tạo mảng
         int _tuoi[] = new int[_size];
+        String _hoTen[] = new String[_size];
         //b3 nhập từng phần tử cho mảng
         for (int i = 0; i < _tuoi.length; i++) {
-            System.out.printf("Nhập phần tử thứ %d : ", i + 1);
+            System.out.printf("Nhập tuổi thứ %d : ", i + 1);
             _tuoi[i] = Integer.parseInt(_sc.nextLine());
+            System.out.printf("Nhập tên thứ %d : ", i + 1);
+            _hoTen[i] = _sc.nextLine();
         }
+        
+        Arrays.sort(_tuoi);
+        Arrays.sort(_hoTen);
+        
+        System.out.println(Arrays.toString(_hoTen));
         //b4 xuất mảng vừa nhập
         System.out.println("Mảng vừa nhập là:");
         for (int i = 0; i < _tuoi.length; i++) {
             System.out.println(_tuoi[i]);
         }
+        
 
     }
 }
