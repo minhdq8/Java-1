@@ -14,10 +14,64 @@ import java.util.Scanner;
 public class Laptop {
     // thuộc tính || trường dữ liệu
     public String _hangSX;
-    double _giaTien;
+    private double _giaTien;
     String _mauSac;
-    
+    protected int _namSX;
     // phương thức
+    // constructor/ pthuc khởi tạo
+    // mặc định có 1 constructor ko tham số
+    // tạo 1 cons mới thì cons mặc định mất đi
+    public Laptop(String _hangSX, double _giaTien, String _mauSac, int _namSX) {
+        this._hangSX = _hangSX;
+        this._giaTien = _giaTien;
+        this._mauSac = _mauSac;
+        this._namSX = _namSX;
+    }
+
+    public Laptop(double _giaTien, String _mauSac) {
+        this._giaTien = _giaTien;
+        this._mauSac = _mauSac;
+    }
+
+    public Laptop() {
+    }
+    
+    
+    // setter và getter
+
+    public String getHangSX() {
+        return _hangSX;
+    }
+
+    public void setHangSX(String _hangSX) {
+        this._hangSX = _hangSX;
+    }
+
+    public String getMauSac() {
+        return _mauSac;
+    }
+
+    public void setMauSac(String _mauSac) {
+        this._mauSac = _mauSac;
+    }
+
+    public int getNamSX() {
+        return _namSX;
+    }
+
+    public void setNamSX(int _namSX) {
+        this._namSX = _namSX;
+    }
+
+    public double getGiaTien() {
+        return _giaTien;
+    }
+
+    public void setGiaTien(double _giaTien) {
+        this._giaTien = _giaTien;
+        //phân biệt tham số và thuộc tính
+    }
+    
     public void nhapTT(){
         Scanner _sc = new Scanner(System.in);
         System.out.print("Mời nhập hãng: ");
