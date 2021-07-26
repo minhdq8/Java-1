@@ -10,6 +10,9 @@ import java.util.Scanner;
 /**
  *
  * @author minhdq
+ * OOP: object oriented programing: ltrinh hướng Đối tượng
+ * 4 tính chất:
+ *  Đóng gói ; Kế thừa; Trừu tượng; Đa hình
  */
 public class Laptop {
     // thuộc tính || trường dữ liệu
@@ -33,6 +36,12 @@ public class Laptop {
         this._mauSac = _mauSac;
     }
 
+    public Laptop(String _hangSX, String _mauSac, int _namSX) {
+        this._hangSX = _hangSX;
+        this._mauSac = _mauSac;
+        this._namSX = _namSX;
+    }
+    
     public Laptop() {
     }
     
@@ -68,7 +77,11 @@ public class Laptop {
     }
 
     public void setGiaTien(double _giaTien) {
-        this._giaTien = _giaTien;
+        if(_giaTien < 0 ){
+            System.out.println("Tiền lớn hơn 0");
+        }else {
+            this._giaTien = _giaTien;
+        }
         //phân biệt tham số và thuộc tính
     }
     
@@ -79,7 +92,7 @@ public class Laptop {
         System.out.print("Mời nhập màu: ");
         _mauSac = _sc.nextLine();
         System.out.print("Mời nhập giá: ");
-        _giaTien = Double.parseDouble(_sc.nextLine());
+        setGiaTien(Double.parseDouble(_sc.nextLine()));
     }
 
     @Override
@@ -88,5 +101,8 @@ public class Laptop {
     }
     public double tinhThue(){
         return (_giaTien * 0.1);
+    }
+    public double tinhThue(double _thue){
+        return (_thue * 0.1);
     }
 }
