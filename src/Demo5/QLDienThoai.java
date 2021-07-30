@@ -18,6 +18,14 @@ public class QLDienThoai {
     ArrayList<DienThoai> _listDT = new ArrayList<>();
 
     public void menu() {
+        while(true){
+        _listDT.add(new DienThoai("333", 333, "333"));
+        _listDT.add(new DienThoai("444", 444, "444"));
+        _listDT.add(new DienThoai("555", 555, "555"));
+        _listDT.add(new DienThoai("111", 111, "111"));
+        _listDT.add(new DienThoai("222", 222, "222"));
+
+            System.out.println("======MENU=======");
         System.out.println("1. Nhập danh sách điện thoại");
         System.out.println("2. Xuất danh sách điện thoại");
         System.out.println("3. In ra năm SX của tất cả ĐT");
@@ -41,6 +49,12 @@ public class QLDienThoai {
             case 2:
                 xuatTT();
                 break;
+            case 3: 
+                namSX();
+                break;
+            case 4:
+                inDTTheoNam();
+                break;
             case 0:
                 System.exit(0);
                 break;
@@ -49,8 +63,45 @@ public class QLDienThoai {
                 break;
 
         }
+        }
     }
-
+    //Tìm ĐT theo tên
+    public void timTen(){
+        System.out.print("Nhập tên cần tìm: ");
+        String ten = _sc.nextLine();
+        for (DienThoai dienThoai : _listDT) {
+            if(dienThoai.getTen().equalsIgnoreCase(ten)){// Hoa=HOA
+                System.out.println(dienThoai);
+            }
+        }
+    }
+    //Xoá ĐT theo hãng
+    //Sắp xếp ĐT theo giá
+//      In ra năm của ĐT ở vị trí bất kỳ
+//       Sửa thông tin ĐT
+    
+//        In ra top 3 theo giá
+    //In ra ĐT trong khoảng năm
+    public void inDTTheoNam(){
+        System.out.println("In ra ĐT trong khoảng năm");
+        System.out.print("Nhập năm min: ");
+        int min = Integer.parseInt(_sc.nextLine());
+        System.out.print("Nhập năm max: ");
+        int max = Integer.parseInt(_sc.nextLine());
+        for(DienThoai xx : _listDT){
+            if(xx.getNamSX() >= min && xx.getNamSX() <= max){
+                System.out.println(xx);
+            }
+        }
+    }
+    //In ra năm SX của tất cả ĐT
+    public void namSX(){
+        System.out.println("Năm SX của tất cả ĐT");
+        for(DienThoai xx : _listDT){
+            System.out.println(xx.getNamSX());
+        }
+    }
+    //
     public void nhapTT() {
         while (true) {
             System.out.print("Mời nhập năm SX: ");
@@ -73,8 +124,12 @@ public class QLDienThoai {
 
     public void xuatTT() {
         System.out.println("=====List danh sách Điện thoại=====");
-        for (int i = 0; i < _listDT.size(); i++) {
-            System.out.println(_listDT.get(i));
+//        for (int i = 0; i < _listDT.size(); i++) {
+//            System.out.println(_listDT.get(i));
+//        }
+        // foreach: in tất mảng từ đầu -> cuối
+        for(DienThoai xxx : _listDT){
+            System.out.println(xxx);
         }
     }
 }
