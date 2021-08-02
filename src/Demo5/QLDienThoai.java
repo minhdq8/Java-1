@@ -5,8 +5,8 @@
  */
 package Demo5;
 
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.*;
+
 
 /**
  *
@@ -18,13 +18,13 @@ public class QLDienThoai {
     ArrayList<DienThoai> _listDT = new ArrayList<>();
 
     public void menu() {
+        _listDT.add(new DienThoai("33", 33, "33", 33));
+        _listDT.add(new DienThoai("44", 44, "44", 44));
+        _listDT.add(new DienThoai("55", 55, "55", 55));
+        _listDT.add(new DienThoai("111", 111, "111", 111));
+        _listDT.add(new DienThoai("222", 222, "22", 22));
+        
         while(true){
-        _listDT.add(new DienThoai("333", 333, "333"));
-        _listDT.add(new DienThoai("444", 444, "444"));
-        _listDT.add(new DienThoai("555", 555, "555"));
-        _listDT.add(new DienThoai("111", 111, "111"));
-        _listDT.add(new DienThoai("222", 222, "222"));
-
             System.out.println("======MENU=======");
         System.out.println("1. Nhập danh sách điện thoại");
         System.out.println("2. Xuất danh sách điện thoại");
@@ -55,6 +55,12 @@ public class QLDienThoai {
             case 4:
                 inDTTheoNam();
                 break;
+            case 6:
+                sxTheoGia();
+                break;
+            case 7: 
+                sxTheoTen();
+                break;
             case 0:
                 System.exit(0);
                 break;
@@ -76,11 +82,34 @@ public class QLDienThoai {
         }
     }
     //Xoá ĐT theo hãng
+    public void xoaDTHang() {
+        System.out.print("Nhập hãng cần tìm: ");
+        String nhapMa = _sc.nextLine();
+        for (DienThoai xx : _listDT) {
+            if (nhapMa.equals(xx.getHangSX())) {
+                _listDT.remove(xx);// xóa 1 Object trong list
+//                break;
+            }
+        }
+    }
     //Sắp xếp ĐT theo giá
-//      In ra năm của ĐT ở vị trí bất kỳ
-//       Sửa thông tin ĐT
+    public void sxTheoGia(){
+        // với thuộc tính có KDL  -> compare
+        Collections.sort(_listDT, (o1,o2) -> Double.compare(o2.getGia(), o1.getGia()));
+        xuatTT();
+    }
+    public void sxTheoTen(){
+        // với string -> compareTo
+        Collections.sort(_listDT, (d1,d2) -> d1.getTen().compareTo(d2.getTen()));
+        _listDT.forEach(x -> System.out.println(x));
+    }
     
-//        In ra top 3 theo giá
+    //In ra năm của ĐT ở vị trí bất kỳ
+    
+    //Sửa thông tin ĐT
+    
+    //In ra top 3 theo giá
+    
     //In ra ĐT trong khoảng năm
     public void inDTTheoNam(){
         System.out.println("In ra ĐT trong khoảng năm");
