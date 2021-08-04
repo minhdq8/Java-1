@@ -19,8 +19,8 @@ public class QLDienThoai {
     public void menu() {
         _listDT.add(new DienThoai("33", 33, "33", 33));
         _listDT.add(new DienThoai("44", 44, "44", 44));
-        _listDT.add(new DienThoai("55", 55, "55", 55));
-        _listDT.add(new DienThoai("111", 111, "111", 111));
+        _listDT.add(new DienThoai("55", 55, "ip12 pro", 55));
+        _listDT.add(new DienThoai("111", 111, "ip12", 111));
         _listDT.add(new DienThoai("222", 222, "22", 22));
 
         while (true) {
@@ -35,7 +35,7 @@ public class QLDienThoai {
             System.out.println("8. In ra năm của ĐT ở vị trí bất kỳ");
             System.out.println("9. Sửa thông tin ĐT");
             System.out.println("10. In ra top 3 theo giá");
-
+            System.out.println("11. In ra điện thoại có tên IP12");
             System.out.println("0. Kết thúc");
 
             System.out.print(">> Chọn chức năng: ...  ");
@@ -54,11 +54,17 @@ public class QLDienThoai {
                 case 4:
                     inDTTheoNam();
                     break;
+                case 5: 
+                    timTen();
+                    break;
                 case 6:
                     sxTheoGia();
                     break;
                 case 9:
                     suaTTTheoTen();
+                    break;
+                case 11:
+                    timTenIP();
                     break;
                 case 0:
                     System.exit(0);
@@ -76,7 +82,16 @@ public class QLDienThoai {
         System.out.print("Nhập tên cần tìm: ");
         String ten = _sc.nextLine();
         for (DienThoai dienThoai : _listDT) {
-            if (dienThoai.getTen().equalsIgnoreCase(ten)) {// Hoa=HOA
+            if (ten.equalsIgnoreCase(dienThoai.getTen())) {// Hoa=HOA
+                System.out.println(dienThoai);
+            }
+        }
+    }
+     public void timTenIP() {
+        System.out.print("Nhập tên cần tìm: ");
+        String ten = _sc.nextLine();
+        for (DienThoai dienThoai : _listDT) {
+            if (dienThoai.getTen().contains(ten)) {// chứa hay ko, ko đổi vị trí tkiem đc
                 System.out.println(dienThoai);
             }
         }
